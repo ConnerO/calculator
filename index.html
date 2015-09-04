@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<<title>Cookie Calc</title>
+	
+	<link rel = "stylesheet" type="text/css" href="main.css">
+	<!-- // <script type="text/javascript" src="calc.js"></script> -->
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+
+
+
+		// function plus(){
+		// alert((parseInt($("#leftbox").val())+(parseInt($("#rightbox").val()))));
+		// }
+
+		// var x = $("#leftbox").val();
+
+
+		function plus(){
+		// (parseInt($("#leftbox").val())+(parseInt($("#rightbox").val())));
+		// return = leftbox + rightbox;
+		var x = $("#leftbox").val();
+		var y = $("#rightbox").val();
+		console.log(x);
+		console.log(y);
+		var z = parseInt(x) + parseInt(y);
+		console.log(z);
+		$("#answer").append("<li>"+z+"</li>");
+		//$("#leftbox" + "#rightbox" = "#answer").append()
+		}
+
+		function minus(){
+		// alert((parseInt($("#leftbox").val())-(parseInt($("#rightbox").val()))));
+		var x = $("#leftbox").val();
+		var y = $("#rightbox").val();
+		console.log(x);
+		console.log(y);
+		var z = parseInt(x) - parseInt(y);
+		console.log(z);
+		$("#answer").append("<li>"+z+"</li>");
+
+		}
+
+		function multiply(){
+		//alert((parseInt($("#leftbox").val())*(parseInt($("#rightbox").val()))));
+		var x = $("#leftbox").val();
+		var y = $("#rightbox").val();
+		console.log(x);
+		console.log(y);
+		var z = parseInt(x) * parseInt(y);
+		console.log(z);
+		$("#answer").append("<li>"+z+"</li>");
+		}
+
+		function divide(){
+		//alert(($("#leftbox").val() / $("#rightbox").val()));
+		var x = $("#leftbox").val();
+		var y = $("#rightbox").val();
+		console.log(x);
+		console.log(y);
+		var z = (x) / (y);
+		console.log(z);
+		$("#answer").append("<li>"+z+"</li>");
+		}
+
+
+	</script>
+</head>
+<body>
+
+
+
+   <h1> C<img src="PerfectCookie.png")><img src="PerfectCookie.png")>kie Calc </h1>
+
+<section>
+	<form>
+		<input id="leftbox" type="text" name="boxone">
+		<input id="rightbox" type="text" name="boxtwo"><br>
+		<input type="button" value="+" onclick="plus()">
+		<input type="button" value="-" onclick="minus()">
+		<input type="button" value="*" onclick="multiply()">
+		<input type="button" value="/" onclick="divide()">
+
+
+	</form>
+</section>
+	<div id="container">
+		
+		<ul id="answer">
+			<li id="screen"></li>
+		</ul>
+	</div>
+</body>
+</html>
